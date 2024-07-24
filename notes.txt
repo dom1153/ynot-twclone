@@ -15,3 +15,15 @@ Intiial Setup:
 > "biome" is a prettier and eslint replacement
 
 tsrafce - ts react arrow functional component export
+
+# Prisma
+
+Be sure to have a .env file with a string and a database to push to
+then do:
+npx primsa db push
+(this will also help with vscode autofill)
+
+mic.hael.dh.yd.e8@googlemail.com
+Mike Hail
+mikehail
+123321
