@@ -18,12 +18,22 @@ tsrafce - ts react arrow functional component export
 
 # Prisma
 
+npx primsa db push (push to web)
+
+Mongo DB Atlas
+
 Be sure to have a .env file with a string and a database to push to
 then do:
 npx primsa db push
 (this will also help with vscode autofill)
 
-mic.hael.dh.yd.e8@googlemail.com
-Mike Hail
+mikehail@maildrop.cc
+mike hail
 mikehail
 123321
+
+next auth ('current' api) presumes you're on port 3000?
+
+vscode -> check the view toggle ports... (port forwarding issues...)
+
+sudo netstat -nlp

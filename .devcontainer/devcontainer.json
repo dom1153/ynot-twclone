@@ -5,6 +5,13 @@
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
 	"postCreateCommand": "npm install",
+	// "forwardPorts": [3000],
+	"portsAttributes": {
+		"3000": {
+			"label": "Hello Remote World",
+			"onAutoForward": "notify"
+		}
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [

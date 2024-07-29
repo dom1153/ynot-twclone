@@ -4,17 +4,14 @@
 			"path": ".."
 		},
 		{
-			"path": "../components"
+			"path": "../pages"
 		},
 		{
-			"path": "../pages"
+			"path": "../components"
 		},
 		{
 			"path": "../styles"
 		}
-		// {
-		// 	"path": "../scripts"
-		// },
 	],
 	"settings": {
 		"files.exclude": {
@@ -41,6 +38,9 @@
 			"components/": true,
 			"scripts/": false
 		},
-		"editor.defaultFormatter": "biomejs.biome"
+		"editor.defaultFormatter": "biomejs.biome",
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "biomejs.biome"
+		}
 	}
 }

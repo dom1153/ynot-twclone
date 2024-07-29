@@ -43,6 +43,7 @@ const Sidebar = () => {
 							auth={item.auth}
 						/>
 					))}
+					{/* Logout button */}
 					{currentUser && (
 						<SidebarItem
 							onClick={() => signOut()}
