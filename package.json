@@ -6,7 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"format": "find . -path ./node_modules -prune -o -name '*.ts' -print | xargs biome format --write"
 	},
 	"dependencies": {
 		"@next-auth/prisma-adapter": "^1.0.7",
