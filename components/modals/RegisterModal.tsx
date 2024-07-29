@@ -30,7 +30,7 @@ const RegistarModal = () => {
 		try {
 			setIsLoading(true);
 
-			// TODO ADD REGISTER AND LOGIN
+			// NOTE: REGISTER AND LOGIN
 			// args here are see in register.ts -> req.body)
 			await axios.post("/api/register", {
 				email,

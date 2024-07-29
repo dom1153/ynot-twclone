@@ -27,7 +27,7 @@ const LoginModal = () => {
 		try {
 			setIsLoading(true);
 
-			// TODO ADD LOGIN
+			// NOTE: LOGIN
 			await signIn("credentials", { email, password });
 
 			toast.success("Logged in 🤷");
