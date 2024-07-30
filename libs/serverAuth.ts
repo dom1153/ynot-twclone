@@ -7,6 +7,7 @@ const serverAuth = async (req: NextApiRequest) => {
 	const session = await getSession({ req });
 
 	if (!session?.user?.email) {
+		// TODO: this should be more elegant so the server cli is clean
 		throw new Error("Not signed in");
 	}
 

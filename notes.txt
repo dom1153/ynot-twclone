@@ -19,6 +19,7 @@ tsrafce - ts react arrow functional component export
 # Prisma
 
 npx primsa db push (push to web)
+npx prisma generate
 
 Mongo DB Atlas
 
