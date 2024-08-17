@@ -1,10 +1,10 @@
 import useLoginModal from "@/hooks/useLoginModal";
-import { useCallback, useState } from "react";
-import Input from "../Input";
-import Modal from "../Modal";
 import useRegisterModal from "@/hooks/useRegisterModal";
 import { signIn } from "next-auth/react";
+import { useCallback, useState } from "react";
 import toast from "react-hot-toast";
+import Input from "../Input";
+import Modal from "../Modal";
 
 const LoginModal = () => {
 	const loginModal = useLoginModal();

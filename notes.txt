@@ -38,3 +38,8 @@ next auth ('current' api) presumes you're on port 3000?
 vscode -> check the view toggle ports... (port forwarding issues...)
 
 sudo netstat -nlp
+
+Todo:
+1. import cleanup
+2. Re-walk through code
+3. Creating your own branding
