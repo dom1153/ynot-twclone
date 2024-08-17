@@ -35,35 +35,36 @@ export default async function handler(
 		if (req.method === "POST") {
 			updatedLikedIds.push(currentUser.id);
 
-			// // NOTIFICATION PART START
-			// try {
-			// 	const post = await prisma.post.findUnique({
-			// 		where: {
-			// 			id: postId,
-			// 		},
-			// 	});
+			// NOTIFICATION PART START
+			// (In try catch block; since server shouldn't crash just because it's doing notifications...)
+			try {
+				const post = await prisma.post.findUnique({
+					where: {
+						id: postId,
+					},
+				});
 
-			// 	if (post?.userId) {
-			// 		await prisma.notification.create({
-			// 			data: {
-			// 				body: "Someone liked your tweet!",
-			// 				userId: post.userId,
-			// 			},
-			// 		});
+				if (post?.userId) {
+					await prisma.notification.create({
+						data: {
+							body: "Someone liked your tweet!",
+							userId: post.userId,
+						},
+					});
 
-			// 		await prisma.user.update({
-			// 			where: {
-			// 				id: post.userId,
-			// 			},
-			// 			data: {
-			// 				hasNotification: true,
-			// 			},
-			// 		});
-			// 	}
-			// } catch (error) {
-			// 	console.log(error);
-			// }
-			// // NOTIFICATION PART END
+					await prisma.user.update({
+						where: {
+							id: post.userId,
+						},
+						data: {
+							hasNotification: true,
+						},
+					});
+				}
+			} catch (error) {
+				console.log(error);
+			}
+			// NOTIFICATION PART END
 		}
 
 		if (req.method === "DELETE") {
