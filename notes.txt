@@ -53,3 +53,5 @@ Todo:
 
 Notes on code:
 Custom Hooks are either data stores or SWR calls
+
+This website is created purely for education purposes and in no way intended to be used for hacking or phishing...
