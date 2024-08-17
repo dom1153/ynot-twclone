@@ -50,8 +50,12 @@ Todo:
 3. Creating your own branding
 4. Readme documentation
 5. Possible extensions
+6. About page (on site) ; github repo link
+7. Tab header (metadata)
 
 Notes on code:
 Custom Hooks are either data stores or SWR calls
 
 This website is created purely for education purposes and in no way intended to be used for hacking or phishing...
+
+Docker setup??? (to skip mongodb)

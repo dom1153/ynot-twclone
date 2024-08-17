@@ -1,40 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Y Not - Twitter Clone
 
-## Getting Started
+![alt text](ynot-tw-clone-thumb.jpg)
 
-First, run the development server:
+![Vercel](https://vercelbadge.vercel.app/api/dom1153/ynot-twclone)
+
+A full stack twitter clone built with React and Next.js for educational purposes.
+
+See the website live [here](https://ynot-twclone.vercel.app/).
+
+## Features
+
+1. Create posts.
+2. Like and comment other user posts.
+3. Following other users on the platform.
+4. Responsive web design.
+5. User Authentication.
+6. Image Uploading.
+
+### Technologies
+
+- React
+- Next.js
+- NextAuth.js
+- Tailwind CSS
+- MongoDB
+- Prisma
+- Typescript
+
+## Prerequisites (for running locally)
+
+A local `npm` install is required.
+
+If you use Visual Studio Code you can use the [Dev Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension. See instructions [below](#visual-studio-code-dev-container-extension)
+
+A flake is included if you're using the [nix package manager](https://nixos.org/).
+
+You will need to have access to a mongodb database to include in a `.env` file
+
+### Getting Started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# or use yarn / pnpm / bun equivalents
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#### Visual Studio Code Dev Container Extension
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Run `> Dev Containers: Rebuild and reopen in container`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### Dev Container (cli)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This requires the standalone dev container [cli app](https://github.com/devcontainers/cli)
 
-## Learn More
+```bash
+cd .devcontainer
+devcontainer up --workspace-folder $PWD/..
+devcontainer exec --workspace-folder $PWD/.. npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+#### Nix / NixOS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+nix develop
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Setting up the `.env` file
 
-## Deploy on Vercel
+A `.env` file is necesssary to issue and retrieve database information from mongodb. The nextauth secrets can be random strings, while the database url must be provided from a mongodb connection string. Sample `.env` file contents are provided below:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```conf
+DATABASE_URL="mongodb+srv://USERNAMEmongodb:XXXXXXXXX@clusterXXXX.XXXXXXX.mongodb.net/test"
+NEXTAUTH_JWT_SECRET="ARBITRARY_JWT_SECRET"
+NEXTAUTH_SECRET="ARBITRARY_SECRET"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Origin of the Name
+
+The name 'Y Not' is a legally distinct variant of 'X' (formerly known as twitter), and simply because why not.
