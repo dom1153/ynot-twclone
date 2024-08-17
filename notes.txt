@@ -50,3 +50,6 @@ Todo:
 3. Creating your own branding
 4. Readme documentation
 5. Possible extensions
+
+Notes on code:
+Custom Hooks are either data stores or SWR calls
