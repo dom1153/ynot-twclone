@@ -6,6 +6,8 @@ import { FaUser } from "react-icons/fa";
 import SidebarItem from "./SidebarItem";
 import SidebarLogo from "./SidebarLogo";
 import SidebarTweetButton from "./SidebarTweetButton";
+import SidebarInfoIcon from "./SidebarInfo";
+import SidebarGithub from "./SidebarGithub";
 
 const Sidebar = () => {
 	const { data: currentUser } = useCurrentUser();
@@ -34,7 +36,12 @@ const Sidebar = () => {
 		<div className="col-span-1 h-full pr-4 md:pr-6">
 			<div className="flex flex-col items-end">
 				<div className="space-y-2 lg:w-[230px]">
-					<SidebarLogo />
+					<div className="flex place-content-between">
+						<SidebarLogo />
+						<SidebarGithub />
+						<SidebarInfoIcon />
+					</div>
+
 					{items.map((item) => (
 						<SidebarItem
 							key={item.href}

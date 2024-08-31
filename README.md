@@ -6,7 +6,7 @@
 
 A full stack twitter clone built with React and Next.js for educational purposes.
 
-See the website live [here](https://ynot-twclone.vercel.app/).
+See the website live at [https://ynot-twclone.vercel.app](https://ynot-twclone.vercel.app/).
 
 ## Features
 

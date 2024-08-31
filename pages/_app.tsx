@@ -8,6 +8,7 @@ import type { AppProps } from "next/app";
 import { Toaster } from "react-hot-toast";
 import { SessionProvider } from "next-auth/react";
 import EditModal from "@/components/modals/EditModal";
+import AboutModal from "@/components/modals/AboutModal";
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<Toaster />
 				<EditModal />
 				<RegistarModal />
+				<AboutModal />
 				<LoginModal />
 				{/* <Modal isOpen title="Test Modal" actionLabel="Submit" /> */}
 				<Layout>
