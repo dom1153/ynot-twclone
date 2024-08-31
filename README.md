@@ -81,3 +81,9 @@ NEXTAUTH_SECRET="ARBITRARY_SECRET"
 ## Origin of the Name
 
 The name 'Y Not' is a legally distinct variant of 'X' (formerly known as twitter), and simply because why not.
+
+## Resources
+
+The original full stack applcation was created by [codewithantonio](https://www.youtube.com/watch?v=ytkG7RT6SvU) on Youtube.
+
+I studied the tutorial to learn the modern Next.js flow, with database interactions in a guided flow with a 'real' app as a finished product.

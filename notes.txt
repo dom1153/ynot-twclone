@@ -38,6 +38,10 @@ rob boss
 robboss
 456654
 
+demo@maildrop.cc
+demo
+demo
+
 next auth ('current' api) presumes you're on port 3000?
 
 vscode -> check the view toggle ports... (port forwarding issues...)

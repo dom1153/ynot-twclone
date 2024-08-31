@@ -4,7 +4,8 @@
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
-	"postCreateCommand": "npm install",
+	// clean install, to avoid node_modules errors with bcrypt if already instealled on macos
+	"postCreateCommand": "npm ci",
 	"forwardPorts": [3000],
 	"portsAttributes": {
 		"3000": {
