@@ -82,7 +82,7 @@ NEXTAUTH_SECRET="ARBITRARY_SECRET"
 
 The name 'Y Not' is a legally distinct variant of 'X' (formerly known as twitter), and simply because why not.
 
-## Resources
+## Credits
 
 The original full stack applcation was created by [codewithantonio](https://www.youtube.com/watch?v=ytkG7RT6SvU) on Youtube.
 
