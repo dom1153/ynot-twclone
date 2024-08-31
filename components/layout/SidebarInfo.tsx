@@ -7,7 +7,7 @@ function SidebarInfoIcon() {
 
 	const handleClick = useCallback(() => {
 		aboutModal.onOpen();
-	}, []);
+	}, [aboutModal]);
 
 	return (
 		// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>

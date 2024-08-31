@@ -10,7 +10,7 @@ const AboutModal = () => {
 
 	const onSubmit = useCallback(async () => {
 		aboutModal.onClose();
-	}, []);
+	}, [aboutModal]);
 
 	const bodyContent = (
 		<div className="flex flex-col gap-4">
